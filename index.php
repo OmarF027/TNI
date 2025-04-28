@@ -138,12 +138,17 @@
                     <a href="#next-event" class="navbar__links">Eventi</a>
                 </li>
                 <li class="navbar__btn">
+<<<<<<< HEAD
                     <a href="/contatti.php" class="button">Contatti</a>
+=======
+                    <a href="/signup.php" class="button" style="transition: all 0.3s ease;">Contatti</a>
+>>>>>>> 8cc9a0c3a5cd39668b0005119a7e114e0b06caee
                 </li>
             </ul>
         </div>
     </nav>
 
+<<<<<<< HEAD
 <!-- Hero Section -->
 <div class="main section-spacing scroll-transition" style="background: linear-gradient(45deg, #0a0a0a 30%, #1a1a1a 100%);">
     <div class="main__container">
@@ -165,6 +170,29 @@
     <!-- Next Event Section -->
     <div class="next-event section-spacing scroll-transition" id="next-event">
         <h1>NEXT EVENT</h1>
+=======
+    <!-- Hero Section -->
+    <div class="main section-spacing scroll-transition" style="transform: translateY(20px); background: linear-gradient(45deg, #0a0a0a 30%, #1a1a1a 100%);">
+        <div class="main__container">
+            <div class="main__content" style="animation: slideUp 1s ease-out;">
+                <h1 style="text-shadow: 0 0 15px rgba(255,255,255,0.5);">TNI ARENA</h1>
+                <h2 style="color: #ff4d4d; margin: 20px 0;">VIVI LA NOTTE</h2>
+                <p style="font-size: 1.2em; letter-spacing: 2px;">Scopri l'esperienza TNI</p>
+                <button class="main__btn" style="transition: all 0.3s ease; background: #ff4d4d;">
+                    <a href="#" style="text-decoration: none; color: white;">Contattaci</a>
+                </button>
+            </div>
+            <div class="main__img--container hover-scale">
+                <img id="main__img" src="images/tni_interni.jpg" alt="TNI Party Image" 
+                     style="border-radius: 10px; box-shadow: 0 10px 30px rgba(255,77,77,0.3);">
+            </div>
+        </div>
+    </div>
+
+    <!-- Next Event Section -->
+    <div class="next-event section-spacing scroll-transition" id="next-event" style="transform: translateY(30px); background: #0a0a0a;">
+        <h1 style="text-align: center; margin-bottom: 40px; font-size: 2.5em; text-transform: uppercase; letter-spacing: 3px;">NEXT EVENT</h1>
+>>>>>>> 8cc9a0c3a5cd39668b0005119a7e114e0b06caee
         <div class="next-event__container" style="background: rgba(255,255,255,0.05); border-radius: 15px; padding: 30px;">
             <div class="next-event__image hover-scale" style="overflow: hidden; border-radius: 10px;">
                 <a href="images/analogichills21.jpg" target="_blank">
@@ -199,6 +227,10 @@
                 </div>
                 <p class="website__rights" style="color: #666;">© TNI 2025. Tutti i diritti riservati</p>
                 <div class="social__icons">
+<<<<<<< HEAD
+=======
+                    <!-- Icone social con effetto hover -->
+>>>>>>> 8cc9a0c3a5cd39668b0005119a7e114e0b06caee
                     <a class="social__icon--link" href="/" target="_blank" aria-label="Facebook"
                        style="margin: 0 10px; transition: all 0.3s ease;">
                         <i class="fab fa-facebook" style="color: #fff; font-size: 1.5em;"></i>
