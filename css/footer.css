@@ -18,7 +18,7 @@
   justify-content: space-between; /* Logo - Testo - Icone */
   align-items: center; /* Centro verticale */
   width: 100%;
-  padding: 0 2rem; /* Spazio ai lati */
+  padding: 0 2rem; /* Un po' di respiro ai lati */
   box-sizing: border-box;
 }
 
