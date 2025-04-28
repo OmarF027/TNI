@@ -22,7 +22,6 @@
   top: -50px; /* UNICA MODIFICA ESSENZIALE */
 }
 
-/* TUTTO IL RESTO DEL CODICE ORIGINALE INVARIATO */
 .main__content {
   color: #fff;
   width: 100%;
@@ -62,43 +61,33 @@
 
 .main__btn {
   font-size: 1rem;
-  background-image: linear-gradient(to top, #f77062 0%, #fe5196 100%);
-  padding: 14px 32px;
+  display: inline-block;
+  background: #ff4d4d;
+  padding: 15px 40px;
   border: none;
-  border-radius: 4px;
-  color: #fff;
+  border-radius: 25px;
+  color: white;
   margin-top: 2rem;
   cursor: pointer;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(255, 77, 77, 0.3);
   position: relative;
-  transition: all 0.35s;
   outline: none;
 }
 
 .main__btn a {
-  position: relative;
-  z-index: 2;
-  color: #fff;
+  color: white;
   text-decoration: none;
-}
-
-.main__btn:after {
-  position: absolute;
-  content: '';
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 100%;
-  background: #4837ff;
-  transition: all 0.35s;
-  border-radius: 4px;
+  font-weight: bold;
+  display: inline-block;
 }
 
 .main__btn:hover {
-  color: #fff;
-}
-
-.main__btn:hover:after {
-  width: 100%;
+  transform: translateY(-2px);
+  background: #ff4d4d;
+  box-shadow: 0 8px 20px rgba(255, 77, 77, 0.4);
 }
 
 .main__img--container {
