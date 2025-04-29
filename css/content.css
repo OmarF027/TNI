@@ -1,0 +1,105 @@
+/* Main Content CSS */
+.main {
+  background-color: #141414;
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  padding-top: 20px;
+}
+
+.main__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  margin: 0 auto;
+  height: 100%;
+  background-color: #131313;
+  z-index: 1;
+  width: 100%;
+  max-width: 1300px;
+  padding: 0 50px;
+  position: relative;
+  top: -50px; /* UNICA MODIFICA ESSENZIALE */
+}
+
+.main__content {
+  color: #fff;
+  width: 100%;
+  transform: translateY(-15%);
+}
+
+.main__content h1 {
+  font-size: 4rem;
+  background-color: #ff8177;
+  background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+  background-size: 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.main__content h2 {
+  font-size: 4rem;
+  margin-top: 10px;
+  background-color: #ff8177;
+  background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);
+  background-size: 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.main__content p {
+  margin-top: 1rem;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.main__btn {
+  font-size: 1rem;
+  display: inline-block;
+  background: #ff4d4d;
+  padding: 15px 40px;
+  border: none;
+  border-radius: 25px;
+  color: white;
+  margin-top: 2rem;
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(255, 77, 77, 0.3);
+  position: relative;
+  outline: none;
+}
+
+.main__btn a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.main__btn:hover {
+  transform: translateY(-2px);
+  background: #ff4d4d;
+  box-shadow: 0 8px 20px rgba(255, 77, 77, 0.4);
+}
+
+.main__img--container {
+  text-align: center;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#main__img {
+  max-height: 70vh;
+  width: auto;
+  max-width: 100%;
+}

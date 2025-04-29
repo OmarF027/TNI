@@ -1,0 +1,93 @@
+@media screen and (max-width: 960px) {
+  .navbar__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Aggiunto per allineare verticalmente gli elementi */
+    height: 80px;
+    z-index: 100; /* Aumentato z-index per sovrastare altri elementi */
+    width: 100%;
+    max-width: 1300px;
+    padding: 0;
+    position: relative; /* Aggiunto per il posizionamento assoluto dei figli */
+  }
+
+  .navbar__menu {
+    display: grid;
+    grid-template-columns: auto;
+    margin: 0;
+    width: 100%;
+    position: absolute;
+    top: -1000px;
+    left: 0; /* Assicura l'allineamento a sinistra */
+    opacity: 0;
+    transition: all 0.5s ease;
+    height: auto; /* Modificato per adattarsi al contenuto */
+    min-height: 50vh; /* Altezza minima invece di fissa */
+    z-index: -1;
+    background: #131313; /* Spostato qui per evitare sfarfallii */
+  }
+
+  .navbar__menu.active {
+    top: 100%; /* Posizionato sotto la navbar */
+    opacity: 1;
+    z-index: 99;
+    padding: 20px 0; /* Aggiunto spazio interno */
+  }
+
+  #navbar__logo {
+    padding-left: 25px;
+    z-index: 100; /* Mantiene il logo sopra il menu */
+  }
+
+  .navbar__toggle {
+    display: block; /* Assicura la visibilità */
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%); /* Centratura verticale */
+    cursor: pointer;
+  }
+
+  .navbar__toggle .bar {
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    background: #fff;
+    display: block;
+  }
+
+  .navbar__item {
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar__links {
+    padding: 1.5rem; /* Ridotto padding per schermi piccoli */
+    width: 100%;
+    display: block; /* Sostituito table con block */
+  }
+
+  .navbar__btn {
+    padding: 1rem 0;
+  }
+
+  .button {
+    width: 60%; /* Larghezza ridotta per mobile */
+    height: 60px;
+    margin: 0 auto;
+  }
+
+  /* Animazione hamburger menu corretta */
+  #mobile-menu.is-active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  #mobile-menu.is-active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  #mobile-menu.is-active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}
